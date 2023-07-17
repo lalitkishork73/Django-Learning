@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django</title>
+    <style>
+        table, th,td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div>
+            <h1>Start with you life</h1>
+            {{peoples}}
+            <br/>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for people in peoples %}
+                    <tr>
+                        <td>{{people.name}}</td>
+                        <td>{{people.age}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo a voluptates dicta dolor nobis tempora! Magnam nobis quam impedit placeat, illum veritatis aperiam commodi, quis nesciunt eaque saepe natus illo nemo. Aspernatur, ex illum deleniti architecto soluta voluptates ipsum at perspiciatis laboriosam consequuntur iusto reiciendis repellat ab tempore vero sapiente dolore tempora veniam corporis deserunt libero nobis. Nisi cupiditate modi assumenda iusto dicta tempora.</p>
+        </div>
+    </main>
+</body>
+</html>
